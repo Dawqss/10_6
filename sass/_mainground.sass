@@ -1,0 +1,40 @@
+body
+	margin: 0
+	padding: 0
+	font-family: helvetica
+	background-color: #ecf0f1
+
+	button
+		@extend .button	
+
+	h1
+		float: left
+		padding: 0 15px
+		margin: 0
+		font-family: 'Ranga'
+		font-weight: 900
+		letter-spacing: 1px
+		font-size: 40px
+
+	h2
+		float: left	
+
+	.column
+		float: left
+
+	.board > .row:first-of-type 
+		line-height: 70px	
+		border-bottom: 1px dotted black
+		button
+			margin-left: 30px
+			@extend .button
+			background-color: #9b59b6
+			font-size: 15px
+
+
+.button
+	border: 0
+	border-radius: 15px
+	padding: 5px 15px
+	cursor: pointer
+
