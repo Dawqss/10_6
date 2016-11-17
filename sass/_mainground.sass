@@ -7,12 +7,13 @@
 	padding: 5px 15px
 	cursor: pointer
 	transition: 0.2s linear
+	outline: none
 
 body
 	margin: 0
 	padding: 0
 	font-family: helvetica
-	background-color: #ecf0f1
+	background-color: #bdc3c7
 	button
 		@extend .button	
 
@@ -35,10 +36,12 @@ body
 	.column-container
 		display: flex
 		.column
+			background-color: #d3d7d9
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
 			flex-grow: 1
 			margin: 10px
 			padding: 5px
-			border: 1px dotted
+			
 			.row:first-of-type
 				text-align: center
 				.add-card
@@ -59,7 +62,13 @@ body
 				cursor: pointer
 				li
 					line-height: 25px
+					padding: 3px
 					margin: 5px 0
+					background-color: #ecf0f1
+					box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+					transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+					&:hover
+						box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
 				p
 					padding: 0
 					margin: 0
@@ -73,8 +82,9 @@ body
 
 	.board > .row:first-of-type 
 		line-height: 70px
-		border-bottom: 1px dotted black
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
 		margin-bottom: 15px
+		background-color: #ecf0f1
 		button
 			margin-left: 30px
 			background-color: #9b59b6
